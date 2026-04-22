@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowGuide — Smart Crop Advisor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <a href="index.html" class="logo">🌱 GrowGuide</a>
+    <nav>
+        <a href="index.html" class="active">Crop Advisor</a>
+        <a href="chat.html">Chat Assistant</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+    <h1>🌾 Smart Crop Recommendation</h1>
+    <p>Describe your farm in plain English or enter exact values — GrowGuide will recommend the best crop for you.</p>
+</div>
+
+<div class="container">
+
+    <!-- Tab Switcher -->
+    <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('natural')">
+            💬 Natural Language
+        </button>
+        <button class="tab-btn" onclick="switchTab('manual')">
+            🔢 Enter Values Manually
+        </button>
+    </div>
+
+    <!-- Natural Language Tab -->
+    <div id="tab-natural" class="card">
+        <h2>📝 Describe Your Farm</h2>
+        <div class="form-group">
+            <label>Farm Description</label>
+            <textarea id="nl-input"
+                placeholder="e.g. I live in a tropical region with loamy soil, high humidity and heavy rainfall. The soil is slightly acidic with good nitrogen content."
+                rows="4"></textarea>
+        </div>
+        <button class="btn btn-primary" onclick="handleNaturalLanguage()" id="nl-btn">
+            🔍 Analyse &amp; Recommend
+        </button>
+
+        <!-- Extracted Features Display -->
+        <div id="nl-features" style="display:none; margin-top:1.25rem;">
+            <p style="font-size:0.88rem; color:var(--text-light); margin-bottom:0.5rem;">
+                ✨ Extracted features (<span id="nl-method"></span>):
+            </p>
+            <div class="features-grid" id="nl-features-grid"></div>
+        </div>
+
+        <div class="msg-error" id="nl-error"></div>
+    </div>
+
+    <!-- Manual Input Tab -->
+    <div id="tab-manual" class="card" style="display:none;">
+        <h2>🔢 Enter Soil &amp; Climate Values</h2>
+        <div class="form-grid">
+            <div class="form-group">
+                <label>Nitrogen — N (0–140)</label>
+                <input type="number" id="m-N" placeholder="e.g. 90" min="0" max="140">
+            </div>
+            <div class="form-group">
+                <label>Phosphorus — P (5–145)</label>
+                <input type="number" id="m-P" placeholder="e.g. 42" min="5" max="145">
+            </div>
+            <div class="form-group">
+                <label>Potassium — K (5–205)</label>
+                <input type="number" id="m-K" placeholder="e.g. 43" min="5" max="205">
+            </div>
+            <div class="form-group">
+                <label>Temperature (°C)</label>
+                <input type="number" id="m-temp" placeholder="e.g. 20.8" min="8" max="44" step="0.1">
+            </div>
+            <div class="form-group">
+                <label>Humidity (%)</label>
+                <input type="number" id="m-humidity" placeholder="e.g. 82" min="14" max="100">
+            </div>
+            <div class="form-group">
+                <label>Soil pH (3.5–9.9)</label>
+                <input type="number" id="m-ph" placeholder="e.g. 6.5" min="3.5" max="9.9" step="0.1">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Rainfall (mm)</label>
+            <input type="number" id="m-rainfall" placeholder="e.g. 202" min="20" max="300">
+        </div>
+        <button class="btn btn-primary" onclick="handleManual()" id="manual-btn">
+            🌿 Get Recommendation
+        </button>
+        <div class="msg-error" id="manual-error"></div>
+    </div>
+
+    <!-- Result Box (shared) -->
+    <div class="result-box" id="result-box">
+        <p style="font-size:0.85rem; color:var(--text-light); margin-bottom:0.25rem;">
+            🏆 Top Recommended Crop
+        </p>
+        <div class="top-crop" id="result-crop"></div>
+        <div class="confidence" id="result-confidence"></div>
+
+        <p style="font-size:0.85rem; font-weight:600; color:var(--text-mid);
+                  margin: 1rem 0 0.5rem;">Top 3 Recommendations</p>
+        <div id="result-bars"></div>
+
+        <div style="margin-top:1.25rem; text-align:center;">
+            <a href="chat.html" class="btn btn-secondary" style="text-decoration:none; display:inline-flex;">
+                💬 Ask GrowGuide about this crop →
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/recommend.js"></script>
+</body>
+</html>

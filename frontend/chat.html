@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowGuide — Chat Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <a href="index.html" class="logo">🌱 GrowGuide</a>
+    <nav>
+        <a href="index.html">Crop Advisor</a>
+        <a href="chat.html" class="active">Chat Assistant</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+    <h1>💬 Agriculture Assistant</h1>
+    <p>Ask me anything about crops, soil, irrigation, fertilizers, or pest control.</p>
+</div>
+
+<div class="container">
+    <div class="card" style="padding: 1.25rem;">
+
+        <!-- Suggested Questions -->
+        <div style="margin-bottom:1rem; display:flex; flex-wrap:wrap; gap:0.5rem;">
+            <span style="font-size:0.82rem; color:var(--text-light);
+                         align-self:center; margin-right:0.25rem;">
+                Try:
+            </span>
+            <button class="btn btn-secondary"
+                style="padding:0.35rem 0.85rem; font-size:0.82rem; border-radius:99px;"
+                onclick="sendSuggestion(this)">
+                Best crop for January?
+            </button>
+            <button class="btn btn-secondary"
+                style="padding:0.35rem 0.85rem; font-size:0.82rem; border-radius:99px;"
+                onclick="sendSuggestion(this)">
+                How to improve soil nitrogen?
+            </button>
+            <button class="btn btn-secondary"
+                style="padding:0.35rem 0.85rem; font-size:0.82rem; border-radius:99px;"
+                onclick="sendSuggestion(this)">
+                Irrigation tips for rice?
+            </button>
+            <button class="btn btn-secondary"
+                style="padding:0.35rem 0.85rem; font-size:0.82rem; border-radius:99px;"
+                onclick="sendSuggestion(this)">
+                How to control pests organically?
+            </button>
+        </div>
+
+        <!-- Chat Window -->
+        <div class="chat-window" id="chat-window"></div>
+
+        <!-- Input Row -->
+        <div class="chat-input-row">
+            <input type="text" id="chat-input"
+                placeholder="Ask about crops, soil, irrigation..."
+                onkeydown="if(event.key==='Enter') sendMessage()">
+            <button class="btn btn-primary" onclick="sendMessage()" id="send-btn"
+                style="width:auto;">
+                Send 🌿
+            </button>
+        </div>
+
+        <!-- Clear chat -->
+        <div style="text-align:right; margin-top:0.5rem;">
+            <button onclick="clearChat()"
+                style="background:none; border:none; color:var(--text-light);
+                       font-size:0.82rem; cursor:pointer;">
+                🗑 Clear conversation
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/chat.js"></script>
+</body>
+</html>

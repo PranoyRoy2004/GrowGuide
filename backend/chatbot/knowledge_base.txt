@@ -1,0 +1,69 @@
+# GrowGuide Agriculture Knowledge Base
+
+## CROP SEASONS (India-focused, adaptable globally)
+- Kharif crops (June-November): Rice, Maize, Cotton, Jute, Sugarcane, Soybean, Groundnut
+- Rabi crops (November-April): Wheat, Barley, Mustard, Gram, Peas, Lentils
+- Zaid crops (March-June): Watermelon, Muskmelon, Cucumber, Vegetables
+
+## SOIL TYPES & BEST CROPS
+- Alluvial soil: Wheat, Rice, Sugarcane, Cotton, Jute (most fertile)
+- Black soil (Regur): Cotton, Soybean, Wheat, Jowar, Sunflower
+- Red soil: Groundnut, Millet, Tobacco, Rice (with irrigation)
+- Laterite soil: Tea, Coffee, Cashew, Rubber (acidic crops)
+- Sandy soil: Millet, Sorghum, Groundnut, Watermelon (drought-resistant)
+- Loamy soil: Almost all crops — best general-purpose soil
+- Clay soil: Rice, Jute (retains water well)
+
+## FERTILIZER GUIDE
+- Nitrogen (N): Promotes leafy growth. Sources: Urea, Ammonium Sulphate, DAP
+  - Deficiency signs: yellowing of older leaves, stunted growth
+  - Excess: excessive vegetative growth, lodging, pest susceptibility
+- Phosphorus (P): Root development, flowering. Sources: SSP, DAP, Rock Phosphate
+  - Deficiency signs: purplish leaves, poor root system, delayed maturity
+- Potassium (K): Disease resistance, fruit quality. Sources: MOP, SOP, Wood Ash
+  - Deficiency signs: brown leaf edges, weak stems, poor fruit quality
+- NPK ratios by crop type:
+  - Cereals (rice, wheat): 120:60:60 kg/ha
+  - Pulses: 20:60:40 kg/ha (fix own nitrogen)
+  - Vegetables: 100:60:60 kg/ha
+  - Fruits: 200:100:200 kg/ha
+
+## IRRIGATION METHODS
+- Drip irrigation: Best for fruits, vegetables, orchards — 40-60% water saving
+- Sprinkler irrigation: Best for cereals, groundnut, vegetables — uniform coverage
+- Flood irrigation: Traditional, used for rice, sugarcane — high water use
+- Furrow irrigation: Row crops like maize, cotton, vegetables
+- Critical irrigation stages:
+  - Rice: Transplanting, tillering, panicle initiation, flowering
+  - Wheat: Crown root initiation (20-25 DAS), jointing, flowering, grain filling
+  - Maize: Knee-high stage, tasseling, silking, grain filling
+
+## PEST & DISEASE MANAGEMENT
+- Integrated Pest Management (IPM) approach recommended
+- Common pests by crop:
+  - Rice: Stem borer, BPH (Brown Plant Hopper), leaf folder, blast disease
+  - Wheat: Aphids, rust diseases (yellow/brown/black rust), loose smut
+  - Cotton: Bollworm, whitefly, aphids, bacterial blight
+  - Vegetables: Aphids, thrips, mites, damping off, powdery mildew
+- Organic pest control: Neem oil (5ml/L), pheromone traps, yellow sticky traps
+- Chemical: Always follow label instructions, observe pre-harvest intervals
+
+## pH MANAGEMENT
+- Most crops prefer 6.0–7.5 pH range
+- To lower pH (too alkaline): Add sulphur, organic matter, acidic fertilizers
+- To raise pH (too acidic): Add agricultural lime (CaCO3), dolomite
+- pH correction rate: 1 tonne lime per acre raises pH by approx 0.5 units
+
+## HARVESTING INDICATORS
+- Rice: 80% grains turned golden, moisture content ~20-25%
+- Wheat: Grains hard, straw yellow, moisture ~14%
+- Maize: Husk dry, kernels dented, black layer formed at base
+- Fruits: Colour change, aroma development, firmness test
+
+## WATER REQUIREMENTS (approximate)
+- Rice: 1200-1800mm per season (highest water user)
+- Wheat: 400-600mm per season
+- Maize: 500-800mm per season
+- Cotton: 700-1200mm per season
+- Sugarcane: 1500-2500mm per season
+- Pulses: 300-500mm per season (drought tolerant)
