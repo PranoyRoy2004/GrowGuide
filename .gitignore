@@ -9,9 +9,6 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Model file (large binary — optional to exclude)
-backend/ml/model.pkl
-
 # Logs
 backend/logs/*.log
 
