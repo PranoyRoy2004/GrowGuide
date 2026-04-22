@@ -90,20 +90,55 @@ The app will be available at `http://localhost:5000`.
 
 ## 📁 Project Structure
 
-```
-GrowGuide/
-├── static/
+growguide/
+│
+├── backend/                        # Flask API server
+│   ├── app.py                      # App entry point & Blueprint registration
+│   ├── config.py                   # Configuration & environment variables
+│   ├── app_logger.py               # Logging utility
+│   ├── requirements.txt            # Python dependencies
+│   ├── Procfile                    # Render deployment config
+│   ├── runtime.txt                 # Python version specification
+│   │
+│   ├── routes/                     # API route handlers
+│   │   ├── recommend.py            # POST /recommend-crop
+│   │   ├── parse.py                # POST /parse-input
+│   │   └── chat.py                 # POST /chat, GET /chat/welcome
+│   │
+│   ├── ml/                         # Machine Learning module
+│   │   ├── train.py                # Model training pipeline
+│   │   ├── preprocess.py           # Data preprocessing & scaling
+│   │   ├── predict.py              # Inference & top-3 recommendations
+│   │   ├── model.pkl               # Trained Random Forest model
+│   │   ├── scaler.pkl              # MinMaxScaler artifact
+│   │   └── label_encoder.pkl       # Crop label encoder
+│   │
+│   ├── nlp/                        # NLP processing module
+│   │   └── parser.py               # Hybrid rule-based + LLM extractor
+│   │
+│   ├── chatbot/                    # Conversational AI module
+│   │   ├── assistant.py            # Groq LLM chat handler
+│   │   └── knowledge_base.txt      # Agriculture domain knowledge
+│   │
+│   ├── data/                       # Dataset
+│   │   └── crop_data.csv           # Crop Recommendation Dataset (2200 rows)
+│   │
+│   └── tests/                      # Automated test suite
+│       ├── test_recommend.py       # 6 tests for /recommend-crop
+│       ├── test_parse.py           # 5 tests for /parse-input
+│       └── test_chat.py            # 6 tests for /chat
+│
+├── frontend/                       # Static web interface
+│   ├── index.html                  # Crop recommendation page
+│   ├── chat.html                   # Chatbot interface page
 │   ├── css/
+│   │   └── style.css               # Global styles & animations
 │   └── js/
-├── templates/
-│   ├── index.html       # Crop Advisor page
-│   └── chat.html        # Chat Assistant page
-├── model/
-│   └── crop_model.pkl   # Trained ML model
-├── app.py               # Main application entry point
-├── requirements.txt
-└── README.md
-```
+│       ├── recommend.js            # Recommendation UI & API integration
+│       └── chat.js                 # Chat UI & conversation management
+│
+├── .gitignore                      # Git exclusions
+└── README.md                       # This file
 
 ---
 
