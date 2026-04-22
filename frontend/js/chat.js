@@ -1,6 +1,6 @@
 // frontend/js/chat.js
 
-const API     = "http://127.0.0.1:5000";
+const API     = "https://growguide-api.onrender.com";
 let history   = [];
 let isWaiting = false;
 
