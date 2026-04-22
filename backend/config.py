@@ -20,7 +20,8 @@ class Config:
     BASE_DIR  = os.path.dirname(__file__)
     DATA_PATH = os.path.join(BASE_DIR, "data", "crop_data.csv")
     ML_DIR    = os.path.join(BASE_DIR, "ml")
-
+     # CORS — allow all origins
+    ALLOWED_ORIGINS = ["*"]
     # CORS — allowed origins for frontend requests
     ALLOWED_ORIGINS = ["http://localhost:5500",   # VS Code Live Server
                        "http://127.0.0.1:5500",

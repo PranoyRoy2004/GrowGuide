@@ -19,8 +19,7 @@ logger = setup_logger("app")
 
 app.config.from_object(Config)
 
-CORS(app, origins=Config.ALLOWED_ORIGINS)
-
+CORS(app, origins="*")
 # ── Register Blueprints ───────────────────────────────────────
 app.register_blueprint(recommend_bp)
 app.register_blueprint(parse_bp)
